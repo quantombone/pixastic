@@ -1,0 +1,31 @@
+
+<html>
+<head>
+<title>MIT rules</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="pixastic.core.js"></script>
+<script type="text/javascript" src="actions/invert.js"></script>
+<script type="text/javascript" src="actions/edges.js"></script>
+</head>
+<body>
+<img src="mit.png" id="myimage"/>
+
+<script type="text/javascript">
+// chained blur and a regional emboss, see image further down
+
+$(document).ready(function()
+{
+
+    Pixastic.process(document.getElementById("myimage"), "invert"); 
+
+var img = new Image();
+img.onload = function() {
+	Pixastic.process(img, "edges", {mono:true,invert:false});
+}
+document.body.appendChild(img);
+img.src = "mit.png";
+});
+
+</script>
+</body>
+</html>

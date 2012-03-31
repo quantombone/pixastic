@@ -20,7 +20,7 @@ Pixastic.Actions.hog = {
 				[c, 	1, 	c],
 				[c, 	c, 	c]
 			];
-
+                        
 			weight = 1/c;
 
 			var rect = params.options.rect;

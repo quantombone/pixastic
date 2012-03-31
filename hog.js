@@ -4,7 +4,7 @@
  * License: [http://www.pixastic.com/lib/license.txt]
  */
 
-Pixastic.Actions.edges = {
+Pixastic.Actions.hog = {
 	process : function(params) {
 
 		var mono = !!(params.options.mono && params.options.mono != "false");
